@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peso en otro planeta</title>
+    <link rel="stylesheet" href="./pesoPlaneta.css">
+</head>
+<body>
+    <main>
+        <div class="card-container">
+            <figure>
+                <img src="/assets/Hero-Image-Marte-Cloud-Terra-Validator-v2.png" alt="">
+            </figure>
+            <h1>Calcula tu peso en otro planeta</h1>
+            <form action="/">
+                <label for="peso">¿ Cuál es tu peso en la  tierra ?</label>
+                <input id="peso" type="number" placeholder="Peso en Kg" autocomplete="off">
+            </form>
+            <div class="planet-section">
+                <label for="planet">Elige un planeta</label>
+                <select name="planet" id="planet">
+                    <option value="Marte">Marte</option>
+                    <option value="Saturno">Saturno</option>
+                    <option value="Jupiter">Jupiter</option>
+                    <option value="Mercurio">Mercurio</option>
+                </select>
+            </div>
+            <div class="answer-section">
+                <button id="answer-button">Calcular</button>
+                <p>Resultado</p>
+                <div class="answer-box">
+                    <p id="answer-paragraph"></p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="./pesoPlaneta.js"></script>
+</body>
+</html>
